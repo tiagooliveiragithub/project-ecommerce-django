@@ -1,3 +1,18 @@
-from django.shortcuts import render
 
-# Create your views here.
+from django.views import View
+from django.http import HttpResponse
+
+
+class Pagar(View):
+    def get(self, *args, **kwargs):
+        return HttpResponse("Pagar")
+
+
+class FecharPedido(View):
+    def get(self, *args, **kwargs):
+        return HttpResponse("FecharPedido")
+
+
+class Detalhe(View):
+    def get(self, *args, **kwargs):
+        return HttpResponse("Detalhe")
