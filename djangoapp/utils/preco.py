@@ -1,5 +1,5 @@
 def formata_preco(val):
-    return f'R$ {val:.2f}'.replace('.', ',')
+    return f'{val:.2f}€'.replace('.', ',')
 
 
 def cart_total_qtd(carrinho):
